@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{58180DB7-3D82-4DE2-BE49-EA115451A3D0}"
+	ProjectSection(SolutionItems) = preProject
+		CustomersOrdersDatabase.sql = CustomersOrdersDatabase.sql
+		CustomerTests.sql = CustomerTests.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tSQLt", "tSQLt", "{49FDA8DC-7198-4EE0-A77C-2E3F549601A3}"
+	ProjectSection(SolutionItems) = preProject
+		tSQLt_V1.0.5873.27393\Example.sql = tSQLt_V1.0.5873.27393\Example.sql
+		tSQLt_V1.0.5873.27393\License.txt = tSQLt_V1.0.5873.27393\License.txt
+		tSQLt_V1.0.5873.27393\ReleaseNotes.txt = tSQLt_V1.0.5873.27393\ReleaseNotes.txt
+		tSQLt_V1.0.5873.27393\SetClrEnabled.sql = tSQLt_V1.0.5873.27393\SetClrEnabled.sql
+		tSQLt_V1.0.5873.27393\tSQLt.class.sql = tSQLt_V1.0.5873.27393\tSQLt.class.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49FDA8DC-7198-4EE0-A77C-2E3F549601A3} = {58180DB7-3D82-4DE2-BE49-EA115451A3D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {028FC1C7-E566-4929-8787-7C3772F7D6AD}
+	EndGlobalSection
+EndGlobal
