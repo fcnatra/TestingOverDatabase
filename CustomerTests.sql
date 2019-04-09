@@ -43,7 +43,7 @@ BEGIN
 END;
 GO
 
-CREATE PROCEDURE fakeSchemaCustomerTest.[test A customer can created with Sales.upsNewCustomer]
+CREATE PROCEDURE fakeSchemaCustomerTest.[test A customer can be created with Sales.upsNewCustomer]
 AS
 BEGIN
 	--- AAA (Arrange, Act, Assert)
