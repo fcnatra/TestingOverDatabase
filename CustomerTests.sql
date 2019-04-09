@@ -49,22 +49,19 @@ BEGIN
 	--- AAA (Arrange, Act, Assert)
 
 	-- ARRANGE
-	DECLARE @id INT;
-	DECLARE @expectedId INT; SET @expectedId = 1;
+	DECLARE @resultName NVARCHAR;
+	DECLARE @expectedName NVARCHAR; SET @expectedName = 'Test Name';
 
 	-- Fake table
 	EXEC tSQLt.FakeTable @TableName='Sales.Customer';
 	
-	INSERT INTO Sales.Customer
-		(CustomerID, CustomerName, YTDOrders, YTDSales)
-		VALUES
-		(@expectedId,'Test Name', 0, 0);
+	EXEC Sales.uspNewCustomer @CustomerName = @expectedName;
 
 	-- ACT
-	SELECT @id = CustomerId FROM Sales.Customer
+	SELECT @resultName = CustomerName FROM Sales.Customer
 
 	-- ASSERT
-	EXEC tSQLt.AssertEquals @expectedId, @id;
+	EXEC tSQLt.AssertEquals @expectedName, @resultName;
 END;
 GO
 
